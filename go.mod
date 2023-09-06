@@ -1,4 +1,4 @@
-module go-little-utils
+module github.com/ShindouMihou/go-little-utils
 
 go 1.20
 
