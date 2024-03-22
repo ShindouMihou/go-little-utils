@@ -6,9 +6,9 @@ import "strings"
 // transformed using the transformer (t).
 func Map[T any, R any](a []T, t func(v T) R) []R {
 	final := make([]R, len(a))
-	for _, v := range a {
+	for i, v := range a {
 		v := v
-		final = append(final, t(v))
+		final[i] = t(v)
 	}
 	return final
 }
